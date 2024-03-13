@@ -1,5 +1,9 @@
 import numpy as np
 
+# vector of numeric entries
+def sigmoid(X):
+    return [1/(1+np.exp(-x)) for x in X]
+
 class RBM:
 
   def __init__(self, num_latent, num_observable):
